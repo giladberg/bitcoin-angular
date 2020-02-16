@@ -1,0 +1,24 @@
+<div class="contact-details-container">
+    <div class="buttons-container">
+        <a [routerLink]="['/contact']">
+            <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+        <a [routerLink]="['/edit', contact._id]">
+            <i class="fas fa-pencil-alt"></i>
+        </a>
+    </div>
+    <div class="info-container">
+        <img src="https://robohash.org/{{contact._id}}" alt="{{contact.name}}" width="130" height="130">
+        <p>Name: {{contact.name}}</p>
+        <p>Phone: {{contact.phone}}</p>
+        <p>Email: {{contact.email}}</p>
+    </div>
+    <app-transfer-fund 
+    (sendCoin)="sendCoin($event)"
+    [contact]="contact"
+     [user]="user"
+     >
+    </app-transfer-fund>
+    <app-move-list [moves]="moves" title="Your Moves:">
+    </app-move-list>
+</div>

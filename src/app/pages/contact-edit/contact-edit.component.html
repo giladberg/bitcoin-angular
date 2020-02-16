@@ -1,0 +1,14 @@
+<div class="contact-edit-container">
+    <div class="buttons-container">
+        <a [routerLink]="['/contact']">
+            <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+        <i class="fas fa-trash-alt" (click)="deleteContact()"></i>
+    </div>
+    
+    <div class="info-container">
+        <img src="https://robohash.org/{{contact._id}}" alt="{{contact.name}}" width="130" height="130">
+        <app-form [contact]="contact" (saveContact)="saveContact($event)" ></app-form>
+    </div> 
+
+</div>

@@ -1,0 +1,6 @@
+<div class="moveList-container" *ngIf="moves.length>0">
+    <h2>{{title}}</h2>
+    <ul *ngFor="let move of moves">
+        <app-move-preview [move]="move"></app-move-preview>
+    </ul>
+</div>

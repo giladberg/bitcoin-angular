@@ -1,0 +1,6 @@
+<div class="contact-page-container">
+    <app-filter (onFilter)="onFilter($event)"></app-filter>
+    <app-contact-list [contacts]="contacts"></app-contact-list>
+    <button class="add-contact-button" (click)="addNewContact()"><i class="fas fa-plus"></i></button>
+</div>
+

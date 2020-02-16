@@ -1,0 +1,8 @@
+<div class="homePage-container">
+    <h2>Hello {{currentUser.name}}</h2>
+    <p><i class="coins fas fa-coins"></i>  Coins: {{currentUser.coin}}</p>
+    <p><i class="bitcoin fab fa-bitcoin"></i>  BTC: {{bitcoinRate}}</p>
+    <app-move-list [moves]="moves"  title="Your last 3 Moves:">
+    </app-move-list>
+</div>
+

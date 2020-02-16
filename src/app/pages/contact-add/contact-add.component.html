@@ -1,0 +1,13 @@
+<div class="contact-add-container">
+    <div class="buttons-container">
+        <a [routerLink]="['/contact']">
+            <i class="fas fa-long-arrow-alt-left"></i>
+        </a>
+    </div>
+    
+    <div class="info-container">
+        <app-form [contact]="contact" (saveContact)="saveContact($event)" ></app-form>
+    </div> 
+
+</div>
+

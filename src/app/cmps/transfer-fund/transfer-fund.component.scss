@@ -1,0 +1,26 @@
+.transfer-container{
+    background-color: cornflowerblue;
+    width:300px;
+    margin-left:40px ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.transferForm-container{
+    display: flex;
+    input{
+        flex-grow: 1;
+        background-color: transparent;
+        border:none;
+        outline: none;
+        border-bottom: 1.3px solid black;
+    }
+    button{
+        border:none;
+        outline: none;
+        padding:5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+}

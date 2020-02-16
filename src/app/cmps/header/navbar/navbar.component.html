@@ -1,0 +1,21 @@
+<nav class="main-nav-container">
+    <a exact class='main-nav-item' [routerLinkActiveOptions]="{exact: true}" routerLink="/" routerLinkActive="selected">
+        <i class="fas fa-home"></i>
+    </a>
+    <a exact class='main-nav-item' [routerLinkActiveOptions]="{exact: true}" routerLink="/contact"
+        routerLinkActive="selected">
+        <i class="fas fa-user-friends"></i>
+    </a>
+    <a exact class='main-nav-item' [routerLinkActiveOptions]="{exact: true}" routerLink="/statistic"
+        routerLinkActive="selected">
+        <i class="fas fa-chart-bar"></i>
+    </a>
+    <a *ngIf="!currentUser" exact class='main-nav-item' [routerLinkActiveOptions]="{exact: true}" routerLink="/signin"
+        routerLinkActive="selected">
+        <i class="fas fa-user-plus"></i>
+    </a>
+    <div (click)="logout()" *ngIf="currentUser" class='main-nav-item logout'>
+        <i class="fas fa-sign-out-alt"></i>
+    </div>
+  
+</nav>

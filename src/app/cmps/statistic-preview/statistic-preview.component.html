@@ -1,0 +1,9 @@
+ <google-chart
+ *ngIf="data"
+width="600"
+[title]="data.name"
+[type]="'LineChart'"
+[data]="data.data"
+[options]="myOptions"
+>
+</google-chart> 

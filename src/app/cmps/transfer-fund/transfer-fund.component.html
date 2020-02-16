@@ -1,0 +1,6 @@
+<div class="transfer-container">
+    <p>Transfer coins to {{contact.name}}:</p>
+    <div class="transferForm-container">Amount:<input type="number" min="1"  [max]="user.coin"  [(ngModel)]="amount" />
+        <button (click)="onSendCoin()">Transfer</button>
+    </div>
+</div>
